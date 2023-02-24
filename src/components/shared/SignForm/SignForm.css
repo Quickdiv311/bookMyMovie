@@ -1,0 +1,60 @@
+.sign-form
+{
+    background-color: rgba(68, 90, 153, 0.051);
+    width: 500px;
+    margin-top: 80px;  
+    margin-bottom: 80px;
+    padding: 60px 45px;
+    box-shadow: 0px 0px 29.4px 0.6px rgb(0 0 0 / 50%);  
+}
+
+.sign-form h3
+{
+    color: #31d7a9;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.sign-form h2
+{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+.form-label
+{
+    color: white !important;
+    text-transform: uppercase;
+}
+
+.form-control-group
+{
+    text-align: left;
+}
+
+.form-control
+{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #23334f;
+    border-radius:0%;
+    color: white;
+}
+
+.form-control:focus-visible 
+{
+    background-color: inherit;
+    border: none;
+}
+
+.login-text
+{
+    color: white;
+}
+
+.login-link{
+    color: #31d7a9;
+}

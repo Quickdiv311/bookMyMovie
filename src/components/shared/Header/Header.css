@@ -1,0 +1,38 @@
+.navbar-bg{
+    background-color: #0a1e5e !important;
+    height: 70px;
+    align-items: center;
+}
+
+.nav-link{
+    color: white !important;
+    font-size: x-large;
+}
+
+@media  only screen and (max-width: 991px) {
+    .navbar-collapse
+    {
+        background-color: #0a1e5e;
+        width: 100vw;
+        padding: 20px 50px;
+    }
+
+    .btn-container
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+.btn-primary{
+    background-image: -webkit-linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+    width: 140px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    border-radius: 18px;
+}
