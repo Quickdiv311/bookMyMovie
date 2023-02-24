@@ -44,10 +44,26 @@
     color: white;
 }
 
-.form-control:focus-visible 
+.form-control::placeholder
+{
+    color: #999;
+}
+
+.btn-wrapper
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-control:focus 
 {
     background-color: inherit;
     border: none;
+    outline: none !important;
+    border-bottom: 1px solid #cf8122;
+    color: white;
 }
 
 .login-text
@@ -57,4 +73,13 @@
 
 .login-link{
     color: #31d7a9;
+    cursor: pointer;
+}
+
+.sign
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://pixner.net/boleto/demo/assets/images/account/account-bg.jpg");
 }

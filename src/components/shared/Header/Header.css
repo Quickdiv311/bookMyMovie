@@ -2,6 +2,12 @@
     background-color: #0a1e5e !important;
     height: 70px;
     align-items: center;
+    opacity: 0.1;
+}
+
+.navbar-brand
+{
+    margin-right: 100px;;
 }
 
 .nav-link{

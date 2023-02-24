@@ -6,7 +6,7 @@ import './Header.css';
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-bg">
-     <div className="container-fluid">
+     <div className="container">
     <a className="navbar-brand" href="#">
     <img src="https://pixner.net/boleto/demo/assets/images/logo/logo.png"></img>
     </a>

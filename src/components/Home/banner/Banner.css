@@ -1,0 +1,26 @@
+.cover
+{
+    padding-top: 150px;
+    background-image: url("http://pixner.net/boleto/demo/assets/images/banner/banner02.jpg");
+    background-position: center;
+    background-size: cover;
+    height:850px;
+}
+
+.cover h2
+{
+    font-size: 100px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.cover p
+{
+    font-size: 40px;
+    color: white;
+}
+
+.cover1
+{
+    color: #31d7a9 !important;
+}
