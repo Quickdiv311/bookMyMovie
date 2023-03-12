@@ -1,0 +1,51 @@
+
+.detail{
+    background-color: #001232;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner{
+    background-color: #032055;
+    height: 140px;
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    padding-left: 120px;
+    height: 250px;
+}
+
+.movieHeader{
+    width: 100%;
+    padding-left: 400px;
+}
+
+.headerImg{
+    position: absolute;
+    top: 270px;
+    left: 100px;
+    width: 250px;
+    height: 350px;
+    border: 1px solid #17305f;
+    border-radius: 6px;
+}
+
+.btnBookTickets{
+    background-image: -webkit-linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+    padding: 11px 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 25px;
+    display: inline-block;
+}

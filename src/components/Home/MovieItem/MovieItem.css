@@ -1,0 +1,30 @@
+.movie-item img
+{
+    height: 75%; 
+    width: 100%;
+}
+
+.movie-item
+{
+    background-color: #032055;
+    color: white;
+    margin-bottom: 20px;
+    min-height: 700px;
+}
+
+.movie-item h2
+{
+    margin-top: 10px;
+}
+
+.ratings
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rating img
+{
+    width: 20px;
+}

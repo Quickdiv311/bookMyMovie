@@ -1,0 +1,24 @@
+[
+    {
+        "name": "MARS",
+        "image": "https://pixner.net/boleto/demo/assets/images/movie/movie02.jpg",
+        "rating1": 88,
+        "rating2": 88
+    },
+    {
+        "name": "ALONE",
+        "image": "https://pixner.net/boleto/demo/assets/images/movie/movie01.jpg",
+        "rating1": 88,
+        "rating2": 88
+    }, {
+        "name": "ON WATCH",
+        "image": "https://pixner.net/boleto/demo/assets/images/movie/movie04.jpg",
+        "rating1": 88,
+        "rating2": 88
+    }, {
+        "name": "VENUS",
+        "image": "https://pixner.net/boleto/demo/assets/images/movie/movie03.jpg",
+        "rating1": 88,
+        "rating2": 88
+    }
+]

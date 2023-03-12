@@ -5,6 +5,9 @@
   background-size: cover;
   margin: 1% 20%;
   padding:  20px;
+  position: relative;
+  top: -100px;
+  z-index: 999;
 }
 
 .search h5
@@ -22,8 +25,9 @@
 .searchCont
 {
   margin-top: 40px;
-  background-color: #0a1e5e;
-  opacity: 0.6;
+  /* background-color: #0a1e5e; */
+  background-color: black;
+  opacity: 0.8;
   display: flex;
   justify-content: space-between;
 }
@@ -44,10 +48,37 @@
   padding: 10px;
   color: white;
   font-size: large;
+  opacity: 0.9;
 }
 
 input::placeholder
 {
-  color: #999;
+  color: white;
   font-size: larger;
+  font-weight: bolder;
+}
+
+.searchDrops
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.searchOption{
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.searchOption label{
+  color: #31d7a9;
+  margin: 0 12px;
+  font-weight: bolder;
+}
+
+.searchOption img
+{
+  opacity: 0.9;
 }

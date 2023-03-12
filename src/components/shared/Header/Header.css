@@ -2,7 +2,22 @@
     background-color: #0a1e5e !important;
     height: 70px;
     align-items: center;
-    opacity: 0.1;
+}
+
+.navbar
+{
+    z-index: 999;
+}
+
+.nav-item
+{
+    margin-right: 40px;
+}
+
+.navbar-nav
+{
+    display: flex;
+    justify-content: flex-end !important;
 }
 
 .navbar-brand
@@ -40,5 +55,6 @@
     justify-content: center;
     align-items: center;
     font-size: larger;
-    border-radius: 18px;
+    outline: none;
+    border-radius: 999px 999px 999px 999px;
 }

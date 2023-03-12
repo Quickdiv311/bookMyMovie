@@ -4,7 +4,8 @@
     background-image: url("http://pixner.net/boleto/demo/assets/images/banner/banner02.jpg");
     background-position: center;
     background-size: cover;
-    height:850px;
+    height:750px;
+    text-align: center;
 }
 
 .cover h2

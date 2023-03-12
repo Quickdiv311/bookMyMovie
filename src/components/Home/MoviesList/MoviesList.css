@@ -1,0 +1,45 @@
+.movies-list-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.movies-list-header1 
+{
+       display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+       align-items: start;
+}
+
+.movies-list-header2
+{
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.btn-transparent
+{
+    background-color: black;
+    color: white;
+    border-radius: 999px 999px 999px 999px;
+}
+
+.btn-transparent:hover
+{
+    background-color: black;
+    color: white;
+    border-radius: 999px 999px 999px 999px;
+}
+
+.btn-primary
+{
+    width: fit-content !important;
+}
