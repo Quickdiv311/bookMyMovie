@@ -24,7 +24,7 @@ const SeatLayout = () => {
      {
       seats.push(value);
      }
-
+     console.log(seats);
      setSelectedSeats(seats);
   }
 

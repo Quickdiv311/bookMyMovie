@@ -8,7 +8,9 @@ const MovieItem = (props) => {
 
   return (
     <div className='movie-item' onClick={() => navigate('movie/'+props.movie._id)}>
+      <div className='movie-item-img-cont'>
         <img className='movie-item-img' src={props.movie.posterUrl} alt="" />
+        </div>
         <h5>{props.movie.name.length>=25 ? props.movie.name.slice(0,25)+'...' : props.movie.name}</h5>
         <p className="content">
                     <hr />
