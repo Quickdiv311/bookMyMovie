@@ -38,18 +38,26 @@
     padding: 15px 30px;
 }
 
-.seatImg
-{
-    width: 45px;
-    margin: 0 5px;
-}
 
-.availableSeats
+
+.availableSeatsStyle
 {
    margin: 0;
    cursor: pointer;
    position: relative;
    align-items: center;
+   color: white;
+   font-weight: bolder;
+}
+
+.selectedSeatsStyle
+{
+   margin: 0;
+   cursor: pointer;
+   position: relative;
+   align-items: center;
+   color: black;
+   font-weight: bolder;
 }
 
 .seatNumber
@@ -58,29 +66,32 @@
     width: 55px;
     margin-top: 8px;
     text-align: center;
-    color: white;
 }
 
 .doubleSeatNumber
 {
     position: absolute;
     margin-top: 8px;
-    margin-left: 22px;
-    color: white;
+    left: 22px;
 }
 
 .doubleSeatNumber2
 {
     position: absolute;
     margin-top: 8px;
-    margin-left: 66px;
+    right: 21px;
     text-align: center;
-    color: white;
 }
 
 .availableSeats:hover .seatNumber
 {
     visibility: hidden;
+}
+
+.seatImg
+{
+    width: 45px;
+    margin: 0 5px;
 }
 
 .doubleSeatImg

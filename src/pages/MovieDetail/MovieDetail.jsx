@@ -22,9 +22,7 @@ function MovieDetail(){
         <div>
              <Header />
              <div className={styles.detail}>
-                <section className={styles.header}>
                     <img className={styles.headerImg} src={movie.posterUrl} alt="" />
-                </section>
                 <section className={styles.movieHeader}>
                     <MovieHeader movie={movie}/>
                 </section>

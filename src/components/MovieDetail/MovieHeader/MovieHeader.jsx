@@ -5,9 +5,9 @@ import styles from "./MovieHeader.module.css";
 function MovieHeader(props){
 
     return (
-        <div>
-            <section className={styles.header}>
-                <div className="mb-3">    
+        <div className={styles.header}>
+                <div className={styles.content}>
+                <div className={styles.main}>
                 <h3 className={styles.title}>{props.movie.name}</h3>
                 <p className={styles.languages}>
                   {
@@ -42,9 +42,7 @@ function MovieHeader(props){
                 </div>
                 </p>
                 </div>
-            </section>
-            <section></section>
-            <section></section>
+                </div>
         </div>
     );
 }

@@ -17,13 +17,6 @@
     align-items: center;
 }
 
-.header{
-    position: relative;
-    width: 100%;
-    padding-left: 120px;
-    height: 250px;
-}
-
 .movieHeader{
     width: 100%;
     padding-left: 400px;
@@ -32,7 +25,7 @@
 .headerImg{
     position: absolute;
     top: 270px;
-    left: 100px;
+    left: 300px;
     width: 250px;
     height: 350px;
     border: 1px solid #17305f;
@@ -48,4 +41,5 @@
     text-transform: uppercase;
     border-radius: 25px;
     display: inline-block;
+    margin-right: 600px;
 }

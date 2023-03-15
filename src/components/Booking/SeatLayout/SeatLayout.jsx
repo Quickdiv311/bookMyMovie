@@ -4,10 +4,10 @@ import styles from './SeatLayout.module.css'
 const SeatLayout = () => {
 
   
-  const seat4 = [1,1,1,1];
-  const seat6 = [1,1,1,1,1,1];
-  const seat2 = [1,1];
-  const seat3 = [1,1,1];
+  const seat4 = Array(4).fill(1);
+  const seat6 = Array(6).fill(1);
+  const seat2 = Array(2).fill(1);
+  const seat3 = Array(3).fill(1);
   const silverPlus = ['G','F'];
   const goldPlus = ['E','D','C','B','A'];
   const availableSeats = ['G3','G7','G8','F1','F3','F11','A1','A2','B5','B6','E11','E12'];
@@ -45,6 +45,19 @@ const SeatLayout = () => {
    setSelectedSeats(seats);
   }
 
+  function isSelected(value)
+  {
+   let seats = [...selectedSeats];
+   if(seats.includes(value))
+   {
+      return styles.selectedSeatsStyle;
+   }
+   else
+   {
+      return styles.availableSeatsStyle;
+   }
+  }
+
   return (
     <div className={styles.seatPlan}>
                  <p className={styles.screenHeader}>
@@ -71,7 +84,7 @@ const SeatLayout = () => {
                                 seat4.map((item, i) => 
                                 
                                  availableSeats.includes(rowNum+(i+1)) ? 
-                                 (<span className={styles.availableSeats} onClick={() => {addSelected(rowNum+(i+1))}}>
+                                 (<span className={isSelected(rowNum+(i+1))} onClick={() => {addSelected(rowNum+(i+1))}}>
                                  <span className={styles.seatNumber}>{rowNum+(i+1)}</span>
                                  {
                                     selectedSeats.includes(rowNum+(i+1)) ?
@@ -90,7 +103,7 @@ const SeatLayout = () => {
                             {
                                 seat6.map((item,i) => 
                                 availableSeats.includes(rowNum+(i+5)) ? 
-                                (<span className={styles.availableSeats} onClick={() => {addSelected(rowNum+(i+5))}}>
+                                (<span className={isSelected(rowNum+(i+5))} onClick={() => {addSelected(rowNum+(i+5))}}>
                                 <span className={styles.seatNumber}>{rowNum+(i+5)}</span>
                                 {
                                  selectedSeats.includes(rowNum+(i+5)) ?
@@ -108,7 +121,7 @@ const SeatLayout = () => {
                             {
                                 seat4.map((item,i) => 
                                 availableSeats.includes(rowNum+(i+11)) ? 
-                                (<span className={styles.availableSeats} onClick={() => {addSelected(rowNum+(i+11))}}>
+                                (<span className={isSelected(rowNum+(i+11))} onClick={() => {addSelected(rowNum+(i+11))}}>
                                 <span className={styles.seatNumber}>{rowNum+(i+11)}</span>
                                 {
                                  selectedSeats.includes(rowNum+(i+11)) ?
@@ -142,7 +155,7 @@ const SeatLayout = () => {
                             {
                                 seat2.map((item,i) => (
                                    rowNum+(i+1)%2!=0 && availableSeats.includes(rowNum+(i+1)) &&  availableSeats.includes(rowNum+(i+2))? 
-                                (<span className={styles.availableSeats} onClick={() => {doubleSelected(rowNum+(i+1),rowNum+(i+2))}}>
+                                (<span className={isSelected(rowNum+(i+1))} onClick={() => {doubleSelected(rowNum+(i+1),rowNum+(i+2))}}>
                                 <span className={styles.doubleSeatNumber}>{rowNum+(i+1)}</span>
                                 <span className={styles.doubleSeatNumber2}>{rowNum+(i+2)}</span>
                                 {
@@ -161,7 +174,7 @@ const SeatLayout = () => {
                             {
                                 seat3.map((item,i) => (
                                  rowNum+(i+5)%2!=0 && availableSeats.includes(rowNum+(i+5)) &&  availableSeats.includes(rowNum+(i+6)) ? 
-                                (<span className={styles.availableSeats} onClick={() => {doubleSelected(rowNum+(i+5),rowNum+(i+6))}}>
+                                (<span className={isSelected(rowNum+(i+5))} onClick={() => {doubleSelected(rowNum+(i+5),rowNum+(i+6))}}>
                                 <span className={styles.doubleSeatNumber}>{rowNum+(i+5)}</span>
                                 <span className={styles.doubleSeatNumber2}>{rowNum+(i+6)}</span>
                                 {
@@ -180,7 +193,7 @@ const SeatLayout = () => {
                             {
                                 seat2.map((item,i) => (
                                  rowNum+(i+11)%2!=0 && availableSeats.includes(rowNum+(i+11)) &&  availableSeats.includes(rowNum+(i+12)) ? 
-                                (<span className={styles.availableSeats} onClick={() => {doubleSelected(rowNum+(i+11),rowNum+(i+12))}}>
+                                (<span className={isSelected(rowNum+(i+11))} onClick={() => {doubleSelected(rowNum+(i+11),rowNum+(i+12))}}>
                                 <span className={styles.doubleSeatNumber}>{rowNum+(i+11)}</span>
                                 <span className={styles.doubleSeatNumber2}>{rowNum+(i+12)}</span>
                                 {

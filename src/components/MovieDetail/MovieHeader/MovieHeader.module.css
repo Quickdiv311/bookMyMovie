@@ -4,6 +4,13 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 12px;
+    padding-top: 200px;
+    height: 400px;
+}
+
+.content
+{
+    margin-left: 200px;
 }
 
 .title{
@@ -48,7 +55,7 @@
     margin-bottom: 30px;
 }
 
-.dateDiv
+.main
 {
-    margin-left: 10px;
+    margin-bottom: 10px;
 }
