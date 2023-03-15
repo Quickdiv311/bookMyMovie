@@ -1,7 +1,12 @@
-.movie-item img
+.movie-item-img
 {
-    height: 75%; 
+    height: 500px; 
     width: 100%;
+}
+
+.movie-item-img:hover
+{
+   transition: 1s ease-out;
 }
 
 .movie-item
@@ -9,22 +14,26 @@
     background-color: #032055;
     color: white;
     margin-bottom: 20px;
-    min-height: 700px;
+    height: 620px;
+    cursor: pointer;
 }
 
-.movie-item h2
+.movie-item h5
 {
     margin-top: 10px;
-}
-
-.ratings
-{
+    height: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.rating img
+.item-ratings
+{
+   text-align: center;
+}
+
+
+.item-ratings img
 {
     width: 20px;
 }

@@ -1,0 +1,90 @@
+.seatPlan
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #001232;
+}
+.screenHeader
+{
+    width: 450px;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.layout
+{
+    display: flex;
+    justify-content: center;
+}
+
+.topLine
+{
+    width: 75%;
+    margin: 20px auto;
+}
+
+.silverPlus{
+    margin-top: 40px;
+    width: 350px;
+    color: #31d7a9;
+    text-align: center;
+}
+
+.seatCol
+{
+    padding: 15px 30px;
+}
+
+.seatImg
+{
+    width: 45px;
+    margin: 0 5px;
+}
+
+.availableSeats
+{
+   margin: 0;
+   cursor: pointer;
+   position: relative;
+   align-items: center;
+}
+
+.seatNumber
+{
+    position: absolute;
+    width: 55px;
+    margin-top: 8px;
+    text-align: center;
+    color: white;
+}
+
+.doubleSeatNumber
+{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 23px;
+    color: white;
+}
+
+.doubleSeatNumber2
+{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 66px;
+    text-align: center;
+    color: white;
+}
+
+.availableSeats:hover .seatNumber
+{
+    visibility: hidden;
+}
+
+.doubleSeatImg
+{
+    width: 90px;
+    margin: 0 10px;
+}
