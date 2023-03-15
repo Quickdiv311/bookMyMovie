@@ -5,11 +5,14 @@ import SignForm from './components/shared/SignForm/SignForm';
 import MovieDetail from './pages/MovieDetail/MovieDetail';
 import TicketPlan from './components/Booking/TicketPlan/TicketPlan';
 import SeatPlan from './components/Booking/SeatPlan/SeatPlan';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
 
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
+       <Provider store={store}>
+       <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/movie/:id" element={<MovieDetail/>} >
@@ -19,6 +22,7 @@ function App() {
             <Route path="/sign" element={<SignForm/>} />
           </Routes>
         </BrowserRouter>
+       </Provider>
     </div>
   );
 }

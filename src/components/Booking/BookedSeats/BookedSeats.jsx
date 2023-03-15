@@ -1,12 +1,20 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { bookingSelector } from '../../../store/reducers/BookingReducer';
 import styles from './BookedSeats.module.css';
 
 const BookedSeats = () => {
+  const selectedSeats = useSelector(bookingSelector);
+
   return (
     <div className={styles.container}>
         <div className={styles.left}>
             <h5>You have Chosen Seat</h5>
-            <h1>D1,D2</h1>
+            <h1>
+              {
+                selectedSeats.map((seat) => <span>{seat+" "}</span>)
+              }
+            </h1>
         </div>
         <div className={styles.left}>
             <h5>Total Price</h5>

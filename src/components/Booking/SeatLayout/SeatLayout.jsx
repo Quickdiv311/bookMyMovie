@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import {bookingSelector, select,remove,selectDouble,removeDouble} from '../../../store/reducers/BookingReducer'
 import styles from './SeatLayout.module.css'
 
 const SeatLayout = () => {
@@ -11,38 +13,34 @@ const SeatLayout = () => {
   const silverPlus = ['G','F'];
   const goldPlus = ['E','D','C','B','A'];
   const availableSeats = ['G3','G7','G8','F1','F3','F11','A1','A2','B5','B6','E11','E12'];
-  const [selectedSeats, setSelectedSeats] = useState([]);
+  const dispatch = useDispatch();
+  const selectedSeats = useSelector(bookingSelector);
 
   function addSelected(value)
   {
      let seats = [...selectedSeats];
      if(seats.includes(value))
      {
-       seats.splice(seats.indexOf(value),1);
+      dispatch(remove(value));
      }
      else
      {
-      seats.push(value);
+      dispatch(select(value));
      }
-     console.log(seats);
-     setSelectedSeats(seats);
   }
 
   function doubleSelected(value1, value2)
   {
+    let valueArray = [value1,value2];
    let seats = [...selectedSeats];
    if(seats.includes(value1) && seats.includes(value2))
    {
-     seats.splice(seats.indexOf(value1),1);
-     seats.splice(seats.indexOf(value2),1);
+      dispatch(removeDouble(valueArray));
    }
    else
    {
-    seats.push(value1);
-    seats.push(value2);
+      dispatch(selectDouble(valueArray));
    }
-   console.log(seats);
-   setSelectedSeats(seats);
   }
 
   function isSelected(value)
