@@ -1,0 +1,35 @@
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin: 24px 20%;
+    background-image: url('https://pixner.net/boleto/demo/assets/images/movie/movie-bg-proceed.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 150px;
+    padding: 0 50px;
+    width: 60%;
+}
+
+h1
+{
+  color: #31d7a9;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.rightBtn
+{
+    background-image: -webkit-linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+    border-radius: 999px 999px 999px 999px;
+    color: white;
+    height: 50px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
