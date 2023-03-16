@@ -15,7 +15,7 @@ const BookedSeats = () => {
           <h5>You have Chosen Seat</h5>
           <h1>
             {
-              selectedSeats.map((seat) => <span>{seat+" "}</span>)
+              selectedSeats.map((seat,i) => <span>{seat + (i<selectedSeats.length-1 ? ",":"")}</span>)
             }
           </h1>
       </div>
