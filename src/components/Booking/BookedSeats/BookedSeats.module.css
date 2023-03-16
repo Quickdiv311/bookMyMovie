@@ -1,17 +1,22 @@
+.bookingTotal
+{
+  width: 60%;
+  margin: 24px 20%;
+}
+
 .container
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid black;
-    margin: 24px 20%;
     background-image: url('https://pixner.net/boleto/demo/assets/images/movie/movie-bg-proceed.jpg');
     background-position: center;
     background-size: cover;
     color: white;
     height: 150px;
     padding: 0 50px;
-    width: 60%;
+    width: 100%;
 }
 
 h1
