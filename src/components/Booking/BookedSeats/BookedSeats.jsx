@@ -1,11 +1,13 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { bookingSelector, priceSelector } from '../../../store/reducers/BookingReducer';
 import styles from './BookedSeats.module.css';
 
 const BookedSeats = () => {
   const selectedSeats = useSelector(bookingSelector);
   const seatsPrice = useSelector(priceSelector);
+  const navigate = useNavigate();
 
   return (
     <div className={styles.bookingTotal}>
@@ -23,7 +25,7 @@ const BookedSeats = () => {
           <h5>Total Price</h5>
           <h1>{seatsPrice}</h1>
       </div>
-      <button className={styles.rightBtn}>PROCEED</button>
+      <button className={styles.rightBtn} onClick={() => navigate('/movie/checkout')}>PROCEED</button>
       </div>}
     </div>
   );

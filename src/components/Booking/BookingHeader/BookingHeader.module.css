@@ -1,0 +1,52 @@
+.header
+{
+    border-top: 1px solid #17305f;
+    border-bottom: 1px solid #17305f;
+    background-color: #032055;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.backBtn
+{
+    background-image: -webkit-linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+    padding: 11px 24px;
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 999px 999px 999px 999px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    align-self: center;
+}
+
+.date
+{
+    color: white;
+}
+
+.selectBar
+{
+    background-image: -webkit-linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+    border-radius: 999px 999px 999px 999px;
+    -webkit-box-shadow: 0px 10px 15px 0px rgb(59 55 188 / 50%);
+    box-shadow: 0px 10px 15px 0px rgb(59 55 188 / 50%);
+    padding: 0 8px;
+    color: white;
+    border: none;
+    height: 36px;
+    outline: none;
+}
+
+.selectBar option
+{
+    background-color: #5560ff;
+}
+
+.headRight
+{
+    color: white
+}

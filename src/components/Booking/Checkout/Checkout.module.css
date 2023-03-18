@@ -1,0 +1,35 @@
+
+
+.container
+{
+    display: flex;
+    margin: 1% 20%;
+    justify-content: space-between;
+}
+
+.left
+{
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+}
+
+.sign
+{
+    background-color: #032055;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signLeft p
+{
+    color: #9aace5;
+    font-size: medium;
+}
+
+.sign-right
+{
+   display: flex;
+}

@@ -2,6 +2,9 @@
 {
     background-color: #001232;
     min-height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100vw;;
 }
 
 .container

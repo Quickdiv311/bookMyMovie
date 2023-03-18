@@ -1,6 +1,4 @@
 import React from 'react';
-import {ImTicket} from 'react-icons/im';
-import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {

@@ -1,0 +1,20 @@
+.banner
+{
+    background-image: url("https://pixner.net/boleto/demo/assets/images/banner/banner04.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 120px;
+    color: white;
+    text-align: center;
+}
+
+.banner h1
+{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.banner p
+{
+    font-size: 25px;
+}

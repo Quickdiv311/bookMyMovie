@@ -7,6 +7,7 @@ import TicketPlan from './components/Booking/TicketPlan/TicketPlan';
 import SeatPlan from './components/Booking/SeatPlan/SeatPlan';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import Checkout from './components/Booking/Checkout/Checkout';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             </Route>
             <Route path="/movie/:id/ticketPlan" element={<TicketPlan/>} />
             <Route path="/movie/seatPlan/:cinemaId" element={<SeatPlan/>}/>
+            <Route path="/movie/checkout" element={<Checkout/>}/>
             <Route path="/sign" element={<SignForm/>} />
           </Routes>
         </BrowserRouter>
